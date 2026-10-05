@@ -16,6 +16,16 @@ You find a business with good reviews and no website (Google Maps)
   → they pay a 50% deposit → Claude finishes it → they pay the rest
 ```
 
+## Faster path: use ELGE CRM
+
+Once the `lg-crm` update is merged and deployed, the CRM does most of this
+for you. **Find clients** searches Google for businesses with no website and
+ranks them. **Reach out** opens call, text, walk-in and email scripts, plus
+a ready-made demo site link (`crm.elgestudio.net/preview/...`) you can text
+right away. No Netlify step needed. One tap on "Called / Texted / Visited"
+logs it and schedules the follow-up. The steps below still work without the
+CRM.
+
 ## Your first 7 days
 
 **Day 1: Set up (about 1 hour)**

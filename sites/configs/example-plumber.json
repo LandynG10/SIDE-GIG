@@ -1,0 +1,23 @@
+{
+  "name": "Rivera Plumbing & Drain",
+  "slug": "example-plumber",
+  "city": "Springfield",
+  "phone": "(555) 010-2030",
+  "tagline": "Licensed plumbing and drain cleaning",
+  "headline": "Leaks, clogs and water heaters fixed fast in Springfield",
+  "subheadline": "Family-owned for 15 years. Upfront pricing, same-day service, and we clean up after ourselves.",
+  "color": "#0b6bcb",
+  "address": "123 Main St, Springfield",
+  "hours": "Mon–Sat 7am–7pm · 24/7 emergency line",
+  "service_area": "Springfield and surrounding towns",
+  "badges": ["Licensed & insured", "Same-day service", "Free estimates"],
+  "services": [
+    {"title": "Drain cleaning", "text": "Kitchen, bath and main-line clogs cleared without the mess."},
+    {"title": "Water heaters", "text": "Repair and replacement, tank or tankless, often same day."},
+    {"title": "Leak repair", "text": "We find hidden leaks and fix them before they become water damage."},
+    {"title": "Emergency service", "text": "Burst pipe at 2am? Call us. A real person answers."}
+  ],
+  "reviews": [
+    {"text": "EXAMPLE ONLY. Replace with a real review copied from the business's Google page.", "author": "Example Customer"}
+  ]
+}

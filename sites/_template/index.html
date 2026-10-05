@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{name}} | {{tagline}} in {{city}}</title>
+<meta name="description" content="{{name}}: {{tagline}} in {{city}}. Call {{phone}} for a free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand: {{color}};
+    --brand-ink: #fff;
+    --ink: #14171c;
+    --muted: #5b6270;
+    --bg: #ffffff;
+    --soft: #f4f6f8;
+    --line: #e3e7ec;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header.top { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.95); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
+  .logo { font-weight: 800; font-size: 1.15rem; text-decoration: none; }
+  .btn { display: inline-block; background: var(--brand); color: var(--brand-ink); padding: 12px 20px; border-radius: 10px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--line); }
+  .hero { padding: 72px 0 56px; background: linear-gradient(180deg, var(--soft), var(--bg)); }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.02em; }
+  .hero p.lead { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0 0 28px; }
+  .hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 28px; color: var(--muted); font-size: .95rem; }
+  .badges span::before { content: "✓ "; color: var(--brand); font-weight: 800; }
+  section { padding: 56px 0; }
+  h2 { font-size: 1.8rem; margin: 0 0 24px; letter-spacing: -0.01em; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card { border: 1px solid var(--line); border-radius: 14px; padding: 22px; background: var(--bg); }
+  .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); }
+  .alt { background: var(--soft); }
+  blockquote { margin: 0; }
+  .review .stars { color: #f5a623; letter-spacing: 2px; }
+  .review cite { display: block; margin-top: 10px; font-style: normal; font-weight: 600; }
+  .contact { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: start; }
+  .contact dl { margin: 0; }
+  .contact dt { font-weight: 600; margin-top: 12px; }
+  .contact dd { margin: 0; color: var(--muted); }
+  .map { width: 100%; height: 300px; border: 0; border-radius: 14px; }
+  footer { padding: 28px 0 96px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
+  .callbar { position: fixed; left: 0; right: 0; bottom: 0; display: none; padding: 10px 16px; background: var(--bg); border-top: 1px solid var(--line); }
+  .callbar .btn { display: block; text-align: center; }
+  @media (max-width: 640px) {
+    header.top .btn { display: none; }
+    .callbar { display: block; }
+    .hero { padding: 48px 0 40px; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">{{name}}</a>
+    <a class="btn" href="tel:{{phone_link}}">Call {{phone}}</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>{{headline}}</h1>
+    <p class="lead">{{subheadline}}</p>
+    <div class="ctas">
+      <a class="btn" href="tel:{{phone_link}}">Call for a free quote</a>
+      <a class="btn ghost" href="#contact">Hours &amp; location</a>
+    </div>
+    <div class="badges">{{badges}}</div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <div class="grid">{{services}}</div>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <div class="grid">{{reviews}}</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Get in touch</h2>
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:{{phone_link}}">{{phone}}</a></dd>
+        <dt>Address</dt><dd>{{address}}</dd>
+        <dt>Hours</dt><dd>{{hours}}</dd>
+        <dt>Service area</dt><dd>{{service_area}}</dd>
+      </dl>
+    </div>
+    <iframe class="map" loading="lazy" title="Map to {{name}}"
+      src="https://maps.google.com/maps?q={{map_query}}&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© {{year}} {{name}} · {{city}}</div>
+</footer>
+
+<div class="callbar"><a class="btn" href="tel:{{phone_link}}">📞 Call {{phone}}</a></div>
+</body>
+</html>

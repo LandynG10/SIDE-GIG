@@ -1,5 +1,8 @@
 # Outreach scripts
 
+> **Use [`voice.md`](voice.md) first.** It's how Landyn actually reaches out
+> and it overrides the older wording below wherever they differ.
+
 Use these word for word at first. Change them once you know what works.
 Replace `[brackets]`. Always lead with the demo link.
 

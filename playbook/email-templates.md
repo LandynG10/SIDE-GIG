@@ -1,5 +1,8 @@
 # Cold emails that don't sound like AI
 
+> **Use [`voice.md`](voice.md) first.** It's how Landyn actually reaches out
+> and it overrides the older wording below wherever they differ.
+
 Rules these follow:
 - **One specific thing you noticed** about *their* business, never generic.
 - **The demo link is the hook.** You already built something, so say so.

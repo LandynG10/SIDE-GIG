@@ -16,3 +16,5 @@ one-page websites to local businesses with no website (see `README.md`,
 - Owner's working style: rewrite each request into a clear coding-agent
   prompt, save it under `prompts/`, then carry it out.
 - Never invent reviews, testimonials, credentials or income claims.
+- After finishing any feature in any repo, run the `cleanup-pass` skill
+  before opening the PR.

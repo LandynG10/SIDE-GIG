@@ -13,4 +13,6 @@ one-page websites to local businesses with no website (see `README.md`,
 - The owner is not a developer. Give step-by-step, plain-language
   instructions: where to click and what to paste.
 - All outreach (email, text, call, in person) follows `playbook/voice.md`.
+- Owner's working style: rewrite each request into a clear coding-agent
+  prompt, save it under `prompts/`, then carry it out.
 - Never invent reviews, testimonials, credentials or income claims.

@@ -18,6 +18,9 @@ something → I already made something specifically for you → want to see it?
   say "yeah send it" is a small commitment and starts a real conversation.
 - Calls: don't memorize a script. Hit the checkpoints. The goal of a cold call
   is permission to send the demo, not to close.
+- Always frame the demo as a quick first draft: "Keep in mind it's just a
+  quick demo so you can get the idea. The real one gets built around what
+  y'all want." Nobody should look at it and think "that's it?"
 - Never invent reviews, numbers or facts about their business.
 
 ---

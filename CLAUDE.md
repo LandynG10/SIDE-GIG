@@ -12,4 +12,5 @@ one-page websites to local businesses with no website (see `README.md`,
 - Pipeline lives in `tracker/leads.csv`.
 - The owner is not a developer. Give step-by-step, plain-language
   instructions: where to click and what to paste.
+- All outreach (email, text, call, in person) follows `playbook/voice.md`.
 - Never invent reviews, testimonials, credentials or income claims.
